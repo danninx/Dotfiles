@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Pre
+sudo pacman -Syu --noconfirm
+sudo pacman -S fastfetch --noconfirm --needed 
+
 # Create bash aliases
 alias_source='if [ -f ~/Dotfiles/.bash_aliases ]; then\n . ~/Dotfiles/.bash_aliases\nfi'
 
@@ -11,3 +15,10 @@ else
 fi
 
 source ~/.bashrc
+
+# fastfetch
+mkdir ~/.config/fastfetch
+cp ~/Dotfiles/.config/fastfetch/config.jsonc ~/.config/fastfetch
+
+# Post
+fastfetch

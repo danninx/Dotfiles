@@ -1,0 +1,30 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+      "type": "kitty-direct",
+      "source": "~/Dotfiles/.config/fastfetch/bluekirb.png",
+      "padding": {
+        "top": 2,
+        "left": 4,
+        "right": 2
+      }
+    },
+    "modules": [
+      "break",
+      "battery",
+      "title",
+      "break",
+      "host",
+      "cpu",
+      "gpu",
+      "memory",
+      "disk",
+      "break",
+      "de",
+      "wm",
+      "wmtheme",
+      "theme",
+      "shell",
+      "terminal"
+    ]
+  }
